@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvTimeSince"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Previous feeding: --"
+        android:textSize="22sp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvCurrentInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount to add: 0ml"
+        android:textSize="20sp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnAdd30"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="#7986CB"
+            android:text="+30ml"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/btnAdd60"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="#7986CB"
+            android:text="+60ml"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:backgroundTint="#F44336"
+            android:text="Clear"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Add feeding"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF" />
+    <TextView
+        android:id="@+id/tvStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:lineSpacingExtra="8dp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:text="Stats loading..."
+        android:layout_marginTop="12dp" />
+    <ListView
+        android:id="@+id/lvHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp">
+    </ListView>
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Clear History"
+        android:backgroundTint="#F44336"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
