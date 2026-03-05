@@ -13,4 +13,4 @@ MilkTracker is an Android app to help parents track **milk feedings** and **diap
 ---
 
 ## Demo video
-<img src="demo/recording.gif" width="320" />
+<img src="demo/recording.gif" width="160" />
